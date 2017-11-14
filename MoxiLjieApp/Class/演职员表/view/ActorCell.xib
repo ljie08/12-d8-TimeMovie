@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActorCell" rowHeight="100" id="KGk-i7-Jjw" customClass="ActorCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lynn" translatesAutoresizingMaskIntoConstraints="NO" id="02m-QM-McM">
+                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="dT8-O7-Pf8"/>
+                            <constraint firstAttribute="height" constant="80" id="ruy-gu-jdX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杰拉德·巴特勒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiG-HC-rzO">
+                        <rect key="frame" x="100" y="15" width="96.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gerard Butler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIO-B6-PD6">
+                        <rect key="frame" x="100" y="42" width="76" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="饰：杰克·劳森" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmh-Dl-F75">
+                        <rect key="frame" x="100" y="70.5" width="77.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="02m-QM-McM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="6tC-8a-8oz"/>
+                    <constraint firstItem="cIO-B6-PD6" firstAttribute="leading" secondItem="KiG-HC-rzO" secondAttribute="leading" id="CLM-sP-aWD"/>
+                    <constraint firstItem="02m-QM-McM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CmR-sn-kcr"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cIO-B6-PD6" secondAttribute="trailing" constant="10" id="Cvm-HD-uAv"/>
+                    <constraint firstItem="KiG-HC-rzO" firstAttribute="top" secondItem="02m-QM-McM" secondAttribute="top" constant="5" id="fH1-N1-cZP"/>
+                    <constraint firstItem="Jmh-Dl-F75" firstAttribute="leading" secondItem="KiG-HC-rzO" secondAttribute="leading" id="m5v-x7-hMz"/>
+                    <constraint firstItem="cIO-B6-PD6" firstAttribute="centerY" secondItem="02m-QM-McM" secondAttribute="centerY" id="nau-4j-foa"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jmh-Dl-F75" secondAttribute="trailing" constant="10" id="sLI-Xz-rma"/>
+                    <constraint firstItem="Jmh-Dl-F75" firstAttribute="bottom" secondItem="02m-QM-McM" secondAttribute="bottom" constant="-5" id="vtD-cP-rA1"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KiG-HC-rzO" secondAttribute="trailing" constant="10" id="wT5-fy-t0i"/>
+                    <constraint firstItem="KiG-HC-rzO" firstAttribute="leading" secondItem="02m-QM-McM" secondAttribute="trailing" constant="10" id="yYJ-wl-IbV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="actorLab" destination="Jmh-Dl-F75" id="E3o-Ji-scW"/>
+                <outlet property="enNameLab" destination="cIO-B6-PD6" id="Hjx-Fb-AVX"/>
+                <outlet property="iconImg" destination="02m-QM-McM" id="WzW-Qv-Aah"/>
+                <outlet property="nameLab" destination="KiG-HC-rzO" id="FoB-4C-g8C"/>
+            </connections>
+            <point key="canvasLocation" x="63" y="82"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="lynn" width="350" height="350"/>
+    </resources>
+</document>

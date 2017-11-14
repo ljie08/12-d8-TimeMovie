@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="140" id="KGk-i7-Jjw" customClass="MovieCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nopic" translatesAutoresizingMaskIntoConstraints="NO" id="taZ-JN-GfK">
+                        <rect key="frame" x="15" y="10" width="80" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="taZ-JN-GfK" secondAttribute="height" multiplier="2:3" id="53P-17-Ypl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全球风暴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ps-CY-8Up">
+                        <rect key="frame" x="105" y="17" width="61.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMAX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8i-od-icw">
+                        <rect key="frame" x="170" y="17" width="30" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="xRf-ES-Ybs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.94901960780000005" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                <color key="value" red="0.94901960784313721" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPg-Ql-INN">
+                        <rect key="frame" x="205" y="17" width="20" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="DYh-87-Roo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.94901960780000005" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                <color key="value" red="0.94901960784313721" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天灾远不如人祸可怕" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AT-sL-dYb">
+                        <rect key="frame" x="105" y="48" width="205" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.4823529412" green="0.74509803919999995" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杰拉德·巴特勒 / 吉姆·斯特吉斯 / 艾比·考尼什 / 艾德·哈里斯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hi-CH-0jK">
+                        <rect key="frame" x="105" y="83" width="205" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="动作 / 科幻 / 惊悚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMW-0E-05f">
+                        <rect key="frame" x="105" y="108" width="205" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YPg-Ql-INN" firstAttribute="leading" secondItem="q8i-od-icw" secondAttribute="trailing" constant="5" id="05a-YQ-no3"/>
+                    <constraint firstItem="0AT-sL-dYb" firstAttribute="leading" secondItem="4Ps-CY-8Up" secondAttribute="leading" id="1VK-OI-c5k"/>
+                    <constraint firstItem="0AT-sL-dYb" firstAttribute="top" secondItem="4Ps-CY-8Up" secondAttribute="bottom" constant="13" id="5Ql-Fh-DAh"/>
+                    <constraint firstItem="cMW-0E-05f" firstAttribute="leading" secondItem="4Ps-CY-8Up" secondAttribute="leading" id="6LW-wg-mnA"/>
+                    <constraint firstItem="taZ-JN-GfK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="7I7-UL-GaR"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YPg-Ql-INN" secondAttribute="trailing" constant="10" id="8bn-oI-VKD"/>
+                    <constraint firstAttribute="trailing" secondItem="cMW-0E-05f" secondAttribute="trailing" constant="10" id="FbL-tK-bqY"/>
+                    <constraint firstItem="YPg-Ql-INN" firstAttribute="top" secondItem="q8i-od-icw" secondAttribute="top" id="IfS-ju-8Ot"/>
+                    <constraint firstItem="taZ-JN-GfK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="KWx-Uo-QGl"/>
+                    <constraint firstItem="4Ps-CY-8Up" firstAttribute="leading" secondItem="taZ-JN-GfK" secondAttribute="trailing" constant="10" id="Okp-Ik-xbo"/>
+                    <constraint firstItem="q8i-od-icw" firstAttribute="leading" secondItem="4Ps-CY-8Up" secondAttribute="trailing" constant="3" id="P8N-ed-gf7"/>
+                    <constraint firstItem="cMW-0E-05f" firstAttribute="top" secondItem="1hi-CH-0jK" secondAttribute="bottom" constant="8" id="Wbx-rr-Sg9"/>
+                    <constraint firstItem="cMW-0E-05f" firstAttribute="bottom" secondItem="taZ-JN-GfK" secondAttribute="bottom" constant="-5" id="eFA-GD-rOf"/>
+                    <constraint firstItem="1hi-CH-0jK" firstAttribute="leading" secondItem="4Ps-CY-8Up" secondAttribute="leading" id="gi2-FC-3tI"/>
+                    <constraint firstItem="taZ-JN-GfK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="l63-g8-Mob"/>
+                    <constraint firstAttribute="trailing" secondItem="0AT-sL-dYb" secondAttribute="trailing" constant="10" id="lzy-cP-MTC"/>
+                    <constraint firstItem="4Ps-CY-8Up" firstAttribute="top" secondItem="taZ-JN-GfK" secondAttribute="top" constant="7" id="rkc-bM-0EL"/>
+                    <constraint firstAttribute="trailing" secondItem="1hi-CH-0jK" secondAttribute="trailing" constant="10" id="wkM-GP-JKv"/>
+                    <constraint firstItem="q8i-od-icw" firstAttribute="top" secondItem="4Ps-CY-8Up" secondAttribute="top" id="yDI-uC-Y2p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="actorLab" destination="1hi-CH-0jK" id="yos-dR-wRv"/>
+                <outlet property="dLabel" destination="YPg-Ql-INN" id="r79-fU-CrN"/>
+                <outlet property="introLab" destination="0AT-sL-dYb" id="eDp-dv-ZQZ"/>
+                <outlet property="maxLab" destination="q8i-od-icw" id="O69-nP-K5z"/>
+                <outlet property="movieImg" destination="taZ-JN-GfK" id="ntg-2N-Hcl"/>
+                <outlet property="movieNameLab" destination="4Ps-CY-8Up" id="oEN-lY-EOc"/>
+                <outlet property="typeLab" destination="cMW-0E-05f" id="YD5-WT-itI"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="103"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="nopic" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" rowHeight="106" id="KGk-i7-Jjw" customClass="CommentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="105.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lynn" translatesAutoresizingMaskIntoConstraints="NO" id="ytT-hp-qId">
+                        <rect key="frame" x="10" y="10" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ytT-hp-qId" secondAttribute="height" multiplier="1:1" id="JRt-0w-pch"/>
+                            <constraint firstAttribute="width" constant="30" id="cBx-rk-A9D"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lynn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0k-wM-UaR">
+                        <rect key="frame" x="48" y="16.5" width="32.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1小时前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B72-jX-YZH">
+                        <rect key="frame" x="91" y="17.5" width="42.5" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="评8.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1R5-a0-rjE">
+                        <rect key="frame" x="279" y="18" width="30.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.4823529412" green="0.74509803919999995" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="虽然剧情有点扯，BUG有点多，但特效相当可以，值得在电影院看，兄弟情有点做作，但毕竟牵起整个主线，可话说这男一男二作为兄弟，选角也太失败了。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Iq-rK-qbq">
+                        <rect key="frame" x="10" y="50" width="300" height="45.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c0k-wM-UaR" firstAttribute="leading" secondItem="ytT-hp-qId" secondAttribute="trailing" constant="8" id="6Ig-Oj-k2j"/>
+                    <constraint firstItem="c0k-wM-UaR" firstAttribute="centerY" secondItem="ytT-hp-qId" secondAttribute="centerY" id="8aU-7s-Bho"/>
+                    <constraint firstItem="B72-jX-YZH" firstAttribute="centerY" secondItem="ytT-hp-qId" secondAttribute="centerY" id="9yP-Ae-zWL"/>
+                    <constraint firstItem="1R5-a0-rjE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="B72-jX-YZH" secondAttribute="trailing" constant="15" id="Cb0-ub-umq"/>
+                    <constraint firstAttribute="bottom" secondItem="4Iq-rK-qbq" secondAttribute="bottom" constant="10" id="Dew-9V-yCh"/>
+                    <constraint firstItem="ytT-hp-qId" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ZOF-td-T66"/>
+                    <constraint firstAttribute="trailing" secondItem="4Iq-rK-qbq" secondAttribute="trailing" constant="10" id="ZSZ-yh-aIc"/>
+                    <constraint firstItem="1R5-a0-rjE" firstAttribute="centerY" secondItem="B72-jX-YZH" secondAttribute="centerY" id="dMG-Yo-adw"/>
+                    <constraint firstItem="B72-jX-YZH" firstAttribute="leading" secondItem="c0k-wM-UaR" secondAttribute="trailing" constant="10" id="dli-O4-Vfp"/>
+                    <constraint firstItem="4Iq-rK-qbq" firstAttribute="top" secondItem="ytT-hp-qId" secondAttribute="bottom" constant="10" id="fi6-l7-1Op"/>
+                    <constraint firstAttribute="trailing" secondItem="1R5-a0-rjE" secondAttribute="trailing" constant="10" id="t4J-Pf-115"/>
+                    <constraint firstItem="4Iq-rK-qbq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="tJp-uc-Fma"/>
+                    <constraint firstItem="ytT-hp-qId" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="vtW-Ot-sg7"/>
+                    <constraint firstItem="ytT-hp-qId" firstAttribute="width" secondItem="ytT-hp-qId" secondAttribute="height" multiplier="1:1" id="yRz-c4-Ffj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="commentLab" destination="4Iq-rK-qbq" id="pEX-sm-ODy"/>
+                <outlet property="headerImg" destination="ytT-hp-qId" id="cOV-zd-bN5"/>
+                <outlet property="nameLab" destination="c0k-wM-UaR" id="x67-S0-I30"/>
+                <outlet property="scoreLab" destination="1R5-a0-rjE" id="3rA-of-4Oa"/>
+                <outlet property="timeLab" destination="B72-jX-YZH" id="a3r-3T-7vQ"/>
+            </connections>
+            <point key="canvasLocation" x="63" y="85"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="lynn" width="350" height="350"/>
+    </resources>
+</document>
